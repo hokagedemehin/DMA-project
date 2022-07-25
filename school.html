@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/output.css">
+  <link rel="stylesheet" href="index.css">
+  <title>DMA Project</title>
+</head>
+
+<body>
+  <header class="w-full">
+    <nav class='flex justify-between mx-4 my-2'>
+      <ul class='flex space-x-4'>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/features.html">Features</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="/contact.html">Contact Us</a>
+        </li>
+      </ul>
+      <ul class='flex space-x-3'>
+        <li>
+
+          <a href="/login.html">Login</a>
+        </li>
+        <li>
+          <a href='/registration.html'>Registration</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <h1 class='text-center text-2xl font-bold pt-8'>Register As School</h1>
+
+  <section class="flex flex-col max-w-lg mx-auto my-5 p-3 shadow-md rounded-md space-y-4">
+    <div class="flex space-x-2 items-center ">
+      <label for="name" name='Name' class='w-2/3'>
+        <p>Name of School: </p>
+      </label>
+      <input type="text" name="name" id="name" class='border p-1 rounded-md w-full'>
+    </div>
+    <div class="flex space-x-2 items-center">
+      <label for="schoolCategory" name='schoolCategory' class='w-2/3'>
+        <p>School Category: </p>
+      </label>
+      <select name="schoolCategory" id="schoolCategory" class='border p-1 rounded-md w-full'>
+        <option value="">--Please choose an option--</option>
+        <option value="dog">Pre School</option>
+        <option value="cat">Primary</option>
+        <option value="hamster">Secondary</option>
+        <option value="parrot">Tertiary</option>
+        <option value="spider">Post Graduate</option>
+
+      </select>
+    </div>
+    <div class="flex space-x-2 ">
+      <label for="description" name='description' class='w-2/3'>
+        <p>School Description: </p>
+      </label>
+      <textarea id="description" name="description" rows="3" cols="33"
+        class='p-1 border rounded-md w-full'>
+      </textarea>
+    </div>
+    <div class="flex space-x-2 ">
+      <label for="address" name='address' class='w-2/3'>
+        <p>School Address: </p>
+      </label>
+      <textarea id="address" name="address" rows="2" cols="33" class='p-1 border rounded-md w-full'>
+      </textarea>
+    </div>
+    <div class="flex space-x-2 items-center ">
+      <label for="contact" name='contact' class='w-2/3'>
+        <p>Contact Number: </p>
+      </label>
+      <input type="tel" name="contact" id="contact" class='border p-1 rounded-md w-full'>
+    </div>
+    <p class='py-4 font-bold text-lg '>Document uploads</p>
+    <div class="flex space-x-2 items-center">
+      <label for="taxCertificate" name='taxCertificate' class='w-2/3'>
+        <p>Tax Certificate: </p>
+      </label>
+      <input type="file" name="taxCertificate" id="taxCertificate" accept='.doc, .docx, .pdf'>
+    </div>
+    <div class="flex space-x-2 items-center">
+      <label for="registrationCertificate" name='registrationCertificate' class='w-2/3'>
+        <p>Registration Certificate: </p>
+      </label>
+      <input type="file" name="registrationCertificate" id="registrationCertificate"
+        accept='.doc, .docx, .pdf'>
+    </div>
+    <div class="flex space-x-2 items-center">
+      <label for="ministryApproval" name='ministryApproval' class='w-2/3'>
+        <p>Ministry Approval: </p>
+      </label>
+      <input type="file" name="ministryApproval" id="ministryApproval" accept='.doc, .docx, .pdf'>
+    </div>
+    <!-- upload button -->
+    <button
+      class='border px-4 py-2 rounded-md w-fit hover:bg-gray-200 transition duration-300 ease-in-out'>Upload
+      Document</button>
+
+    <!-- submit form -->
+    <button
+      class='border border-blue-600 px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out'>Upload
+      Document</button>
+  </section>
+
+</body>
+
+</html>
